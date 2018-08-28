@@ -11,7 +11,7 @@ class PrimeCheck
 	   num<=1000;
 	for(int i=2;i<=num/2;i++)
 	{
-           temp=num%i;
+           v=num%i;
 	   if(v==0)
 	   {
 	      x=false;
