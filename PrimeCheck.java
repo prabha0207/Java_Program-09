@@ -3,26 +3,25 @@ class PrimeCheck
 {
    public static void main(String args[])
    {		
-	int temp;
-	boolean isPrime=true;
+	int v;
+	boolean x=true;
 	Scanner scan= new Scanner(System.in);
-	System.out.println("Enter any number:");
 	
 	int num=scan.nextInt();
-        scan.close();
+	   num<=1000;
 	for(int i=2;i<=num/2;i++)
 	{
            temp=num%i;
-	   if(temp==0)
+	   if(v==0)
 	   {
-	      isPrime=false;
+	      x=false;
 	      break;
 	   }
 	}
 
-	if(isPrime)
-	   System.out.println(num + " is a Prime Number");
+	if(x)
+	   System.out.println("yes");
 	else
-	   System.out.println(num + " is not a Prime Number");
+	   System.out.println( "no");
    }
 }
